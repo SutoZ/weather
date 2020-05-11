@@ -1,0 +1,16 @@
+<div class="pad-left">
+    <h1>Weather data</h1>
+    <!-- <button class="btn btn-primary" (click)="handleClick()">Click me!</button> -->
+    
+    <div class="row">
+        <div *ngFor="let event of events" class="col-md-5">
+            <div>Date: {{event.date}}</div>
+            <div *ngIf="event?.location">
+                <span>Location: {{event?.location?.address}} </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <weather-thumbnail [event]="event"></weather-thumbnail> -->
